@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mona Sans', sans-serif;
+}
+
+body {
+    background-color: #3A4A49;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,body {
+  overflow-x: hidden;
+}
+
+
+nav {
+    background-color: #2C2C2C;
+    position: fixed; /* navbar fixa */
+    width: 100%;
+    z-index: 10;
+    
+}
+
+nav.transparent {
+  background-color: rgba(44, 44, 44, 0.555); /* transparente ao rolar */
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+  padding: 6rem 12rem;
+}
+
+/* Header */
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    
+}
+
+.nav-links {
+    display: flex;
+    gap: 50px;
+}
+
+.nav-links li {
+    color: #F5F5F5;
+    transition: .3s ease-in-out;
+}
+
+.nav-links li:hover {
+    color: #D4AF37;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+/* Hero */
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.671), rgba(0, 0, 0, 0.671)), 
+    url('../assets/haircut-photo.png');
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+    gap: 20px;
+}
+
+.hero-content h1 {
+  font-size: 2.3rem;
+  font-weight: 800;
+}
+
+.hero-content p {
+  font-weight: 400;
+  
+}
+
+/* About */
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  gap: 30px;
+  flex-wrap: wrap-reverse;
+}
+
+.about h1, .services h1, .reviews h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  padding:20px 0;
+}
+
+.about h3 {
+  color: goldenrod;
+  border-bottom: 2px solid goldenrod; 
+  display: inline-block;
+}
+
+.about p,.services p, .reviews-content p {
+  font-style: italic;
+  font-size: large;
+  font-weight: 400;
+  max-width: 600px;
+}
+
+/* Services */
+
+.services {
+  background-color: #D4BFA5;
+  color: #3A4A49;
+}
+
+.services-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+
+.services h2 {
+  color: #1F2A2A;
+  border-bottom: 2px solid #1F2A2A;
+  display: inline-block;
+}
+
+.services-card {
+  background-color: #D4BFA5;
+  padding-top: 60px;
+}
+.services-photos {
+  display: flex;
+  gap: 2rem; 
+  justify-content: center;
+  flex-wrap: wrap; 
+}
+
+.services-photos article {
+  border-radius: 10px;
+  padding: 1.5rem;
+  flex: 1 1 300px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.services-photos article img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.services-photos article img:hover {
+  transform: scale(1.23);
+  
+}
+
+.services-photos article h2 {
+  margin-bottom: 0.5rem;
+  color: goldenrod;
+  font-weight: 800;
+  border-bottom: none;
+}
+
+.services-photos article p {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #3A4A49;
+}
+
+/* Review */
+
+.reviews {
+  background-color:#4d6361 ;
+ 
+}
+
+.reviews h2 {
+  color: goldenrod;
+  border-bottom: 2px solid goldenrod; 
+  display: inline-block;
+}
+
+.reviews-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding-bottom: 100px;
+}
+
+.reviews-customer {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+ 
+}
+
+.reviews-card { 
+  max-width: 300px;
+  text-align: center;
+  padding: 20px;
+  background-color: #D4BFA5;
+  border-radius: 7px;
+  
+}
+
+.reviews-card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+
+}
+
+.reviews-card span {
+  font-size: 0.8rem;
+}
+
+.reviews-card p {
+  font-style: italic;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.reviews-card time {
+  color: white;
+  font-weight: 400;
+}
+
+.reviews-card .stars {
+  font-size: 1.5rem;
+  font-style: normal;
+  color: darkgoldenrod;
+  letter-spacing: 3px;
+}
+
+/* Awards */
+
+.award-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.award-content h1 {
+  color: goldenrod;
+  font-size: 4rem;
+}
+
+.award-content h2 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.award-content p {
+  font-size: 1.1rem;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.award {
+  background-image:linear-gradient(rgba(0, 0, 0, 0.671), rgba(0, 0, 0, 0.671)), url('../assets/awards.png');
+  background-size:cover no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;              
+  justify-content: center; 
+  align-items: flex-end;        
+  padding-bottom: 9rem;
+  
+}
+
+/* Contact */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact h1 {
+  text-align: center;
+  color: goldenrod;
+  font-size: 3rem;
+  border-bottom: 2px solid goldenrod;
+  display: inline-block;
+  margin-bottom: 3rem;
+}
+
+.socials-contact {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.socials-contact i {
+  font-size: 2rem;
+  transition: .3s ease-in-out 0s;
+}
+
+.socials-contact i:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 1rem 2rem; /* linha e coluna */
+  max-width: 800px; 
+  margin-bottom: 3rem;
+}
+
+.contact-info p {
+  font-size: 1.2rem;
+  color: white;
+  display: flex;
+  gap: 0.7rem; 
+}
+
+
+.location {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  width: 100%;
+  height: 300px; 
+}
+
+.location iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+.map-overlay {
+  position: absolute;
+  top: 32%;  
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.6);
+  color: white;
+  padding: 0.5rem 1rem;  
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.location h2 {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* footer */
+
+footer {
+  background-image: linear-gradient(rgba(0,0,0,0.671), rgba(0,0,0,0.671)), url('../assets/footer-image.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #F5F5F5;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.footer-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly; 
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+
+.footer-content p {
+  font-size: 1.5rem;
+}
+
+.footer-content span {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 1rem;
+  font-size: 2rem;
+ 
+}
+
+.footer-content span i {
+   transition:  .3s ease-in-out;
+}
+
+
+.footer-content span i:hover {
+  transform: scale(1.3);
+}
+
+
+.footer-text {
+  display: flex;
+  text-align: center;
+  margin-top: 1rem;
+  color: goldenrod;
+}
+
+.footer-text a {
+  color: #A288DE;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+  cursor: pointer;
+}

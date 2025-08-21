@@ -1,0 +1,57 @@
+/* Botão do Navbar */
+.nav-button {
+  position: relative;
+  display: inline-block;
+  padding: 12px 30px;
+  color: #2C2C2C;                 
+  background-color: #D4AF37;      
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-button::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -150%; /* começa mais à esquerda para suavidade */
+  width: 400%; /* mais largo para difusão */
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: rotate(45deg);
+  opacity: 0;
+}
+
+.nav-button:hover::before {
+  opacity: 1;
+  animation: shine 2s ease-in-out infinite; /* mais suave e mais lento */
+}
+
+@keyframes shine {
+  0% {
+    left: -150%;
+  }
+  100% {
+    left: 150%;
+  }
+}
+
+
+.nav-button:hover {
+  background: rgba(44, 44, 44, 0.5); 
+  color: #D4AF37;                    
+  backdrop-filter: blur(6px);        
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.2); 
+}
+
+
+/*  */

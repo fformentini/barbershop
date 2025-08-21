@@ -1,0 +1,31 @@
+.bi-instagram {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.bi-facebook {
+  color: #3b5998;
+}
+
+.bi-geo-alt-fill {
+  color: #EA4335;
+}
+
+.bi-clock {
+  color: goldenrod;
+}
+
+.bi-telephone {
+  color: green;
+}
+
+.bi-envelope {
+  color: #2C2C2C;
+}
+
+.bi-github {
+  color: #A288DE;
+}

@@ -1,5 +1,134 @@
 @media screen and (max-width: 768px) {
-  nav {
-    background-color: blue;
-  }
+
+    body,
+    html {
+        overflow-x: hidden;
+    }
+
+    .hamburger {
+        display: block;
+        background: none;
+        border: none;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1001;
+        cursor: pointer;
+        font-size: 2rem;
+        color: white;
+    }
+
+    .navbar {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(34, 34, 34, 0.97);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+    }
+
+    .navbar.open {
+        display: flex;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+    }
+
+    .navbar .nav-button {
+        margin-top: 30px;
+
+    }
+
+    section {
+        padding: 60px 20px;
+    }
+
+    .about {
+        flex-wrap: initial;
+        flex-direction: column;
+    }
+
+    .about img {
+        width: 300px;
+        max-width: 350px;
+    }
+
+    .services {
+        display: block;
+
+    }
+
+    .services-content {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .services h2 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        border-bottom: 0;
+    }
+
+    .services p {
+        word-break: normal;
+        overflow-wrap: break-word;
+    }
+
+    .reviews-content {
+        display: block;
+
+    }
+
+    .contact-info {
+        display: block;
+    }
+
+    .contact-info p {
+        margin-bottom: 20px;
+    }
+
+    .location {
+        width: 100vw;
+        padding-bottom: 50px;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    footer p {
+        text-align: center;
+    }
+
+}
+
+/* scheduling page */
+
+@media screen and (max-width: 768px) {
+
+    body,
+    html {
+        overflow-x: hidden;
+    }
+
+    header {
+        padding: 60px 20px;
+        margin-top: 50px;
+    }
 }

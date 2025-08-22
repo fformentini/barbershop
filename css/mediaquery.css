@@ -5,6 +5,13 @@
         overflow-x: hidden;
     }
 
+    body.no-scroll {
+        overflow: hidden;
+        height: 100vh;
+        /* garante que o scroll fique travado em mobile */
+    }
+
+
     .hamburger {
         display: block;
         background: none;
@@ -12,7 +19,7 @@
         position: fixed;
         top: 20px;
         left: 20px;
-        z-index: 1001;
+        z-index: 1000;
         cursor: pointer;
         font-size: 2rem;
         color: white;
@@ -27,8 +34,9 @@
         height: 100vh;
         background: rgba(34, 34, 34, 0.97);
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
+        padding-top: 100px;
         z-index: 100;
     }
 
@@ -45,10 +53,20 @@
         align-items: center;
     }
 
-    .navbar .nav-button {
-        margin-top: 30px;
-
+    .navbar img {
+        margin-bottom: 30px;
     }
+
+    .navbar .nav-button {
+        display: none;
+    }
+
+    .header {
+        position: fixed;
+        /* tira o header do fluxo normal */
+        top: 0;
+    }
+
 
     section {
         padding: 60px 20px;
@@ -89,6 +107,10 @@
         overflow-wrap: break-word;
     }
 
+    .services-photos article img:hover {
+        transform: scale(1.08);
+    }
+
     .reviews-content {
         display: block;
 
@@ -116,19 +138,11 @@
         text-align: center;
     }
 
-}
-
-/* scheduling page */
-
-@media screen and (max-width: 768px) {
-
-    body,
-    html {
-        overflow-x: hidden;
-    }
-
-    header {
+    /* scheduling page */
+    .scheduling header {
         padding: 60px 20px;
         margin-top: 50px;
+        
     }
+
 }

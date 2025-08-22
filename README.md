@@ -80,7 +80,7 @@ E pronto! Você já pode interagir com o sistema de agendamento.
 Este projeto é um excelente protótipo front-end. Os próximos passos para torná-lo uma aplicação completa envolvem a construção de um back-end:
 
 ### Front-end e Deploy
--   [ ] **Responsividade:** Adicionar media queries para otimizar a visualização em dispositivos móveis e tablets.
+-   [x] **Responsividade:** Adicionar media queries para otimizar a visualização em dispositivos móveis e tablets.
 -   [ ] **Deploy:** Publicar o projeto online utilizando plataformas como **Vercel** ou **Netlify** para que possa ser acessado por qualquer pessoa.
 
 ### Back-end (Evolução para uma Aplicação Real)

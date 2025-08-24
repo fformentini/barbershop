@@ -4,6 +4,8 @@
 
 > Um projeto front-end que simula um sistema de agendamento moderno, dinâmico e interativo para uma barbearia. O sistema permite que os usuários visualizem os serviços e agendem um horário em uma interface intuitiva.
 
+### 🚀 [Acesse o meu projeto clicando aqui!](https://formentinibarbershop.netlify.app/)
+
 ### 🖼️ Demonstração
 
 ![Demonstração da Tela de Agendamento](assets/scheduleprint.png)
@@ -81,7 +83,7 @@ Este projeto é um excelente protótipo front-end. Os próximos passos para torn
 
 ### Front-end e Deploy
 -   [x] **Responsividade:** Adicionar media queries para otimizar a visualização em dispositivos móveis e tablets.
--   [ ] **Deploy:** Publicar o projeto online utilizando plataformas como **Vercel** ou **Netlify** para que possa ser acessado por qualquer pessoa.
+-   [x] **Deploy:** Publicar o projeto online utilizando plataformas como **Vercel** ou **Netlify** para que possa ser acessado por qualquer pessoa.
 
 ### Back-end (Evolução para uma Aplicação Real)
 -   [ ] **Criar um Back-end:** Utilizar Node.js, Python ou outra tecnologia para gerenciar os dados.
